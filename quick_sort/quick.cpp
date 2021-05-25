@@ -32,15 +32,16 @@ void mostrar(int v[], int tam){
     for (int i=0; i<tam; i++){
         cout << "Pos: " << i << " = " << v[i] << endl;
     }
-    cout<<endl;
+    cout << endl;
 }
 
 int main(){
     int entrada[] = {9 , 10 , -1, 3, 6, 2, 1, -3, 1, 0, -2, 15, 8, -7, 0};
+    int tamanho = sizeof(entrada)/sizeof(entrada[0]);
 
-    mostrar(entrada, sizeof(entrada)/4);
-    quick(entrada, 0, sizeof(entrada)/4);
-    mostrar(entrada, sizeof(entrada)/4);
+    mostrar(entrada, tamanho);
+    quick(entrada, 0, tamanho);
+    mostrar(entrada, tamanho);
 
     return 0;
 }
